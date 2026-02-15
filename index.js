@@ -11,13 +11,12 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas centralizadas
-// Ahora todas tus rutas colgarán de aquí (ej: http://localhost:3000/roles)
 app.use("/", require("./src/app"));
 
 // Abrimos la app en el puerto seteado
 app.listen(PORT, () => {
   console.log(`
-    AsystyCole - Servidor backend
+    Sycor - Servidor backend
     ---------------------------
     🚀 Servidor corriendo en el puerto: http://localhost:${PORT}
     ---------------------------
